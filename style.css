@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding: 0;
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+
+}
+
+.container{
+    width: 400px;
+    height: 20vh;
+    text-align: center;
+   
+}
+#inputfield,#addtodo{
+    margin-top: 10px;
+}
+#inputfield{
+    padding: 3px;
+    width: 170px;
+    height: 30px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 17px;
+    vertical-align: middle;
+}
+#addtodo{
+    height: 31px;
+    width: 50px;
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 30px;
+}
+.to-dos{
+    margin-top: 25px;
+}
+.paragraph{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    text-align: justify;
+}

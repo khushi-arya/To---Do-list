@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>To-Do List</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To Do List</h1>
+     <input type="text" id="inputfield">
+     <button id="addtodo">+</button>
+    <div class="to-dos" id="todocontainer"></div>
+    </div>
+ 
+    
+    <script>
+        let btn = document.getElementById('addtodo');
+        let  todo = document.getElementById('todocontainer');
+        let input = document.getElementById('inputfield');
+
+        btn.addEventListener('click', function(){
+                  var para = document.createElement('p');
+                  para.classList.add('paragraph');
+                  para.innerText = input.value;
+                  todo.appendChild(para);
+                  input.value = "";
+
+                  para.addEventListener('click' , function(){
+                    para.style.textDecoration ="line-through";
+                  })
+
+               /*    para.addEventListener('dblclick' , function(){
+                    para.removeChild(para);
+                  })*/
+                  para.addEventListener('dblclick', function() {
+  // Access the parent node and remove para from its parent
+                    para.style.display="none";
+                });
+
+
+
+})
+    </script>
+</body>
+</html>
+
